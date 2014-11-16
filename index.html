@@ -1,0 +1,33 @@
+<DOCTYPE html>
+<html>
+<head>
+  <title>Deep Thought</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+
+    <script type="text/javascript" src="counter.js"></script>
+</head>
+<body ondragstart="return false">
+  <div id="wrapper">
+    <p id="title">Deep Thought</p>
+    <div id="bar">
+      <div id="button" style="background-color: #E61919;"></div>
+      <div id="button"></div>
+      <div id="button"></div>
+    </div>
+    <div id="box">
+      <p>whitemouse@DeepThought:~$ sudo compute -q "The Answer to Life, the Universe, and Everything"</p>
+      <p>sudo: process initiated: {"Ultimate Answer", "2014:11:16:02:07:37"}</p>
+      <p>sudo: process: "Ultimate Answer": estimated time remaining:</p>
+      <div id="remaining"></div>
+      <p class="type">whitemouse@DeepThought:~$ </p>
+      <input class="type" id="cmd" type="textbox" maxlength="66" onkeypress="error(event);">
+    </div>
+    <img src="loading_blob.gif">
+    <p id="work">Working&nbsp;&nbsp;&nbsp;</p>
+    <div id="error">
+      <p>Error: The current process ["Ultimate Answer"] is using all available system memory. Please wait for it to finish running before continuing.</p>
+      <input id="ok" type="button" value="OK" onclick="hideError()">
+    </div>
+  </div>
+</body>
+</html>
