@@ -3,16 +3,17 @@
 <head>
   <title>Deep Thought</title>
     <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" type="text/css" href="icons.css">
 
     <script type="text/javascript" src="counter.js"></script>
 </head>
 <body ondragstart="return false">
   <div id="wrapper">
-    <p id="title">whitemouse@DeepThought: ~</p>
+    <p id="title">whitemouse@DeepThought:~</p>
     <div id="bar">
-      <div id="button" style="background-color: #E61919;"></div>
-      <div id="button"></div>
-      <div id="button"></div>
+      <div class="button" id="button-red"><span class="icon-cross"></span></div>
+      <div class="button"><span class="icon-minus"></span></div>
+      <div class="button"><span class="icon-checkbox-unchecked"></span></div>
     </div>
     <div id="box">
       <p>whitemouse@DeepThought:~$ sudo compute -q "The Answer to Life, the Universe, and Everything"</p>
@@ -26,7 +27,7 @@
     <img src="loading_blob.gif">
     <p id="work">Working&nbsp;&nbsp;&nbsp;</p>
     <div id="error">
-      <p>Error: The current process ["Ultimate Answer"] is using all available system memory. Please wait for it to finish running before continuing.</p>
+      <p>Error: The current process [Ultimate Answer] is using all available system memory. Please wait for it to finish running before continuing.</p>
       <input id="ok" type="button" value="OK" onclick="hideError()">
     </div>
   </div>
