@@ -68,13 +68,6 @@ body {
     padding: 0 5px;
     background-color: rgba(50,50,50,0.6);
 }
-[class^="icon-"], [class*=" icon-"] {
-    font-size: 9px;
-    position: relative;
-    top: 6px;
-    left: 0.5px;
-    color: #4f4f4f;
-}
 p {
     margin: 0;
 }
@@ -113,6 +106,11 @@ img {
 #ok:focus {
     outline: none;
 }
+
+svg {
+    width: 100px;
+}
+
 * {
     -webkit-touch-callout: none;
     -webkit-user-select: none;
